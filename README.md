@@ -1,57 +1,64 @@
-# MRP
-Mazzoni Recovery Protocol – Seed phrases from literature. Mind-backed. Notary-sealed.
-# MRP – Mazzoni Recovery Protocol™
+# MRP – Mazzoni Recovery Protocol
 
-> **A seed phrase that lives in a book, your mind, and a notary.**
+> **Any public text + one mental rule = 24, 48, or 72 BIP39 words — all in your head.**
 
-No paper. No metal. No cloud.  
-Just literature + brain + law.
+**One protocol. One sentence. Infinite entropy.**
 
 ---
 
-## How it works
+## Core Protocol
 
-1. **Choose a stable public book** (e.g. LOTR, 1984, Dune)  
-2. **Define a mental rule** (e.g. "1st common noun per chapter")  
-3. **Extract 24 words** → map to BIP39 if needed  
-4. **Enter into Ledger**  
-5. **Seal rule + book ref with notary** (post-mortem access)
+1. **Choose any stable public text**  
+2. **Define one mental rule** (in your head only)  
+3. **Extract 24, 48, or 72 words** → map to BIP39  
+4. **Enter into Ledger**
+
+→ **No backup. No risk. Just you + literature.**
 
 ---
 
-## Example: LOTR (HarperCollins 2004)
+## Memory Rule (applies to all)
 
-| Chapter | Word |
-|-------|------|
-| 1 | party |
-| 2 | shadow |
-| 3 | company |
-| ... | ... |
-| 22 | breaking |
+> **"Gandalf, Bilbo, Winston: after each chapter, take the first noun."**
 
-→ Full list in `lotr_2004.csv`
+→ **One sentence = 72 words in your head.**
 
-## MRP v2 – Multi-Book Mode (Advanced)
-
-Use **3 different books**, 8 chapters each:
-
-| Book | Chapters | Example Rule |
-|------|---------|-------------|
-| LOTR (2004) | 1–8 | 1st noun after "the" |
-| The Hobbit (2012) | 1–8 | 1st noun after comma |
-| 1984 (Penguin) | 1–8 | 1st noun in dialogue |
-
-→ 24 unique BIP39 words  
-→ **Unbreakable entropy**
 ---
 
-## Files
+## Examples
 
-- `notary_template.txt` – Swiss notary letter  
-- `bip39_wordlist.txt`  
-- `lotr_2004.csv` – 24 words  
-- `rule_variants.md` – 10 rule ideas  
-- `mapper.py` – auto-map non-BIP39 words
+### 1. Beginner (24 words)  
+- **Text**: LOTR (2004)  
+- **Rule**: 1st noun per chapter  
+- **Output**: see [`lotr_2004.csv`](lotr_2004.csv)  
+- **Entropy**: ~80 bit
+
+### 2. Advanced (24 words)  
+- **Text**: 3 books × 8 chapters  
+- **Rule**: see [`rule_variants.md`](rule_variants.md)  
+- **Entropy**: ~256 bit
+
+###  3. Whale (48 words)  
+- **Text**: LOTR + Hobbit (1–24 each)  
+- **Rule**: 1st noun per chapter  
+- **Entropy**: ~528 bit
+
+### 4. Quantum (72 words)  
+- **Text**: LOTR + Hobbit + 1984 (1–24 each)  
+- **Rule**: 1st noun per chapter  
+- **Entropy**: **792 bit**
+
+---
+
+## Tools & Templates
+
+| File | Use |
+|------|-----|
+| [`lotr_2004.csv`](lotr_2004.csv) | Full 22-word list from LOTR (Example 1) |
+| [`rule_variants.md`](rule_variants.md) | 10 mental rule ideas |
+| [`mapper.py`](mapper.py) | Auto-map non-BIP39 words to BIP39 |
+| [`notary_template.txt`](notary_template.txt) | Swiss notary letter (post-mortem access) |
+
 
 ---
 
@@ -71,5 +78,3 @@ MIT © 2025 Enea Mazzoni (@eneamazzoni)
 
 ---
 
-> **"Not your keys, not your coins.  
-> Not your rule, not your seed."**
