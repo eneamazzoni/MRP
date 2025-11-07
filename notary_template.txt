@@ -1,0 +1,26 @@
+[SEALED ENVELOPE – TO BE OPENED ONLY UPON DEATH OR CERTIFIED INCAPACITY]
+
+MRP – Mazzoni Recovery Protocol
+Recovery Instructions for Ledger Wallet
+
+Book: The Lord of the Rings  
+Edition: HarperCollins 50th Anniversary, 2004 (ISBN: 978-0618517657)
+
+Rule:  
+"First common English noun per chapter of Book I (The Fellowship of the Ring).  
+Skip proper names (Bilbo, Frodo) and invented words (hobbit, orc, shire).  
+If no valid noun in chapter → use first valid in same or next chapter."
+
+The 24 BIP39 words must be entered in chapter order.
+
+Example:  
+Chapter 1 → "party" (not "hobbit")
+
+Beneficiaries: [NAME / %]
+
+Signed:  
+Enea Mazzoni  
+Place: Switzerland  
+Date: 07 November 2025
+
+Notary: [NAME / STAMP]
