@@ -58,13 +58,6 @@
 - **Person B** knows **only the mental rule** (e.g. "1st noun after 'the'")
 - Both must **collaborate** to reconstruct the 24-word BIP39 seed
 
-### Use Cases
-| Scenario | A (Book) | B (Rule) |
-|--------|---------|---------|
-| Family Office | Parent | Child |
-| Hedge Fund | Trader | Compliance |
-| DAO | Member 1 | Member 2 |
-| Inheritance | You | Notary |
 
 ### Security
 - **Zero hardware**
