@@ -31,6 +31,18 @@ Just literature + brain + law.
 
 → Full list in `lotr_2004.csv`
 
+## MRP v2 – Multi-Book Mode (Advanced)
+
+Use **3 different books**, 8 chapters each:
+
+| Book | Chapters | Example Rule |
+|------|---------|-------------|
+| LOTR (2004) | 1–8 | 1st noun after "the" |
+| The Hobbit (2012) | 1–8 | 1st noun after comma |
+| 1984 (Penguin) | 1–8 | 1st noun in dialogue |
+
+→ 24 unique BIP39 words  
+→ **Unbreakable entropy**
 ---
 
 ## Files
