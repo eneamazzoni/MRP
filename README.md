@@ -1,22 +1,21 @@
 [![MRP](https://img.shields.io/github/stars/eneamazzoni/MRP?style=social)](https://github.com/eneamazzoni/MRP)
 
 # MRP – Mazzoni Recovery Protocol
-> **Any public text + one mental rule = 24, 48, or 72 BIP39 words — all in your head.**
+> **Any public text + one mental rule = 24, 48, or 72 BIP39 words — all in your head.**  
 **One protocol. One sentence. Infinite entropy.**
 
 ---
 ## Core Protocol
-1. **Choose any stable public text**
-2. **Define one mental rule** (in your head only)
-3. **Extract 24, 48, or 72 words** → map to BIP39
-4. **Enter into Ledger**
+1. **Choose any stable public text**  
+2. **Define one mental rule** (in your head only)  
+3. **Extract 24, 48, or 72 words** → map to BIP39  
+4. **Enter into Ledger**  
 
 → **No backup. No risk. Just you + literature.**
 
 ---
 ## Memory Rule (applies to all)
-> **"Gandalf, Bilbo, Winston: after each chapter, take the first noun."**
-
+> **"Gandalf, Bilbo, Winston: after each chapter, take the first noun."**  
 → **One sentence = 72 words in your head.**
 
 ---
@@ -28,24 +27,24 @@
 ## Examples
 
 ### 1. Beginner (24 words)
-- **Text**: LOTR (HarperCollins 2004)
-- **Rule**: 1st common noun per chapter
-- **Output**: see [`lotr_2004.csv`](lotr_2004.csv)
+- **Text**: LOTR (HarperCollins 2004)  
+- **Rule**: 1st common noun per chapter  
+- **Output**: [`lotr_2004.csv`](lotr_2004.csv)  
 - **Entropy**: ~80 bit
 
 ### 2. Advanced (24 words)
-- **Text**: 3 books × 8 chapters
-- **Rule**: see [`rule_variants.md`](rule_variants.md)
+- **Text**: 3 books × 8 chapters  
+- **Rule**: [`rule_variants.md`](rule_variants.md)  
 - **Entropy**: ~256 bit
 
 ### 3. Whale (48 words)
-- **Text**: LOTR + Hobbit (1–24 each)
-- **Rule**: 1st common noun per chapter
+- **Text**: LOTR + Hobbit (1–24 each)  
+- **Rule**: 1st common noun per chapter  
 - **Entropy**: ~528 bit
 
 ### 4. Quantum (72 words)
-- **Text**: LOTR + Hobbit + 1984 (1–24 each)
-- **Rule**: 1st common noun per chapter
+- **Text**: LOTR + Hobbit + 1984 (1–24 each)  
+- **Rule**: 1st common noun per chapter  
 - **Entropy**: **792 bit**
 
 ---
@@ -54,63 +53,50 @@
 > **Neither can recover alone.**
 
 ### How it works
-- **Person A** knows **only the public text** (e.g. "LOTR HarperCollins 2004")
-- **Person B** knows **only the mental rule** (e.g. "1st noun after 'the'")
-- Both must **collaborate** to reconstruct the 24-word BIP39 seed
+- **Person A**: public text (e.g. "LOTR 2004")  
+- **Person B**: mental rule (e.g. "1st noun after 'the'")  
+- **Both** must collaborate
 
 
+---
 ## MRP Notary 2-of-2: Zero-Trust Inheritance
-
 > **Book(s) in one safe + Rule(s) in another safe = Post-mortem recovery**  
 > **No single party sees both.**
 
 ### How it works
-1. **You** split the seed:
-   - **Document A**: *Public text(s) + edition(s)*  
-     (e.g. "LOTR HarperCollins 2004, Hobbit 2012, 1984 Penguin")
-   - **Document B**: *Mental rule(s)*  
-     (e.g. "1st noun after 'the' in odd chapters")
-2. **Deposit**:
-   - **Document A** → **Notary A / Safe Deposit Box A**
-   - **Document B** → **Notary B / Safe Deposit Box B**
-3. **Heirs**: must retrieve **both documents** to reconstruct
+1. **Split**:
+   - **Document A**: *Public text(s) + edition(s)* → Notary A / Safe A  
+   - **Document B**: *Mental rule(s)* → Notary B / Safe B  
+2. **Heirs**: retrieve both → reconstruct seed
 
 ### Benefits
-- **Zero trust**: No one sees the full seed  
+- **Zero trust**  
 - **No single point of failure**  
-- **Legal & compliant** (Swiss notaries, dual custody)  
-- **Scales**: 24/48/72 words with 1–3 books
+- **Swiss notary compliant**  
+- **Scales to 792 bit**
 
 **Template**: [`notary_template.txt`](notary_template.txt)  
 > _"To my heirs: retrieve Document A from Notary A and Document B from Notary B. Combine to recover the seed."_
-
-### Security
-- **Zero hardware**
-- **Zero shared backup**
-- **$5 wrench resistant**
-- **Same entropy as standard 24-word seed**
-
-> **True trustless 2-of-2 — powered by literature and the human mind.**
 
 ---
 ## Tools & Templates
 | File | Use |
 |------|-----|
-| [`lotr_2004.csv`](lotr_2004.csv) | Full 22-word list from LOTR (Example 1) |
-| [`rule_variants.md`](rule_variants.md) | 10 mental rule ideas |
-| [`mapper.py`](mapper.py) | Auto-map non-BIP39 words to BIP39 |
-| [`notary_template.txt`](notary_template.txt) | Swiss notary letter (post-mortem access) |
+| [`lotr_2004.csv`](lotr_2004.csv) | LOTR word list (Example 1) |
+| [`rule_variants.md`](rule_variants.md) | 10 rule ideas |
+| [`mapper.py`](mapper.py) | Auto-map to BIP39 |
+| [`notary_template.txt`](notary_template.txt) | Swiss notary letter |
 
 ---
 ## Security
-- Book = public
-- Rule = private (mental)
-- Notary = legal trigger
+- **Book** = public  
+- **Rule** = private (mental)  
+- **Notary** = legal trigger  
 
 > **24 words = 256 bit**  
 > **48 words = 528 bit**  
 > **72 words = 792 bit**  
-> **MRP = 24/48/72 words that live only in your head.**
+> **MRP = words that live only in your head.**
 
 ---
 ## Security Comparison
@@ -127,8 +113,4 @@
 
 ---
 ## License
-MIT © 2025 Enea Mazzoni (@eneamazzoni)
-
----
-## License
-MIT © 2025 Enea Mazzoni (@eneamazzoni)
+MIT © 2025 Enea Mazzoni [](https://x.com/eneamazzoni)
