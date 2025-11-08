@@ -1,26 +1,49 @@
-[SEALED ENVELOPE – TO BE OPENED ONLY UPON DEATH OR CERTIFIED INCAPACITY]
+================================================================
+MRP – MAZZONI RECOVERY PROTOCOL
+Notary 2-of-2 Zero-Trust Inheritance
+================================================================
 
-MRP – Mazzoni Recovery Protocol
-Recovery Instructions for Ledger Wallet
+To my heirs:
 
-Book: The Lord of the Rings  
-Edition: HarperCollins 50th Anniversary, 2004 (ISBN: 978-0618517657)
+Your inheritance is protected by the Mazzoni Recovery Protocol (MRP).
+The seed is split into TWO sealed documents:
 
-Rule:  
-"First common English noun per chapter of Book I (The Fellowship of the Ring).  
-Skip proper names (Bilbo, Frodo) and invented words (hobbit, orc, shire).  
-If no valid noun in chapter → use first valid in same or next chapter."
+────────────────────────────────────────────────────────────────
+DOCUMENT A – PUBLIC TEXT(S) + EDITION(S)
+────────────────────────────────────────────────────────────────
+Location: Notary A / Safe Deposit Box A
+Name: [Notary A Name], [Address], [Contact]
 
-The 24 BIP39 words must be entered in chapter order.
+Content:
+- Book 1: [e.g. The Lord of the Rings, HarperCollins 2004]
+- Book 2: [e.g. The Hobbit, HarperCollins 2012]
+- Book 3: [e.g. 1984, Penguin Classics 2008]
 
-Example:  
-Chapter 1 → "party" (not "hobbit")
+> These are public books. The notary sees only titles.
 
-Beneficiaries: [NAME / %]
+────────────────────────────────────────────────────────────────
+DOCUMENT B – MENTAL RULE(S)
+────────────────────────────────────────────────────────────────
+Location: Notary B / Safe Deposit Box B
+Name: [Notary B Name], [Address], [Contact]
 
-Signed:  
-Enea Mazzoni  
-Place: Switzerland  
-Date: 07 November 2025
+Content:
+- Rule: [e.g. "1st common noun after 'the' in odd-numbered chapters"]
+- OR: [e.g. "1st noun in dialogue on pages ending in 7"]
 
-Notary: [NAME / STAMP]
+> This rule was known only to me. It was never written elsewhere.
+
+────────────────────────────────────────────────────────────────
+HOW TO RECOVER
+────────────────────────────────────────────────────────────────
+1. Retrieve **Document A** from Notary A
+2. Retrieve **Document B** from Notary B
+3. Open the books and apply the rule
+4. Extract 24 / 48 / 72 words → enter into Ledger
+
+→ You now have full access.
+
+================================================================
+MRP GitHub: https://github.com/eneamazzoni/MRP
+Author: Enea Mazzoni (@eneamazzoni)
+================================================================
