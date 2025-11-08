@@ -30,17 +30,17 @@
 - **Text**: LOTR (HarperCollins 2004)  
 - **Rule**: 1st common noun per chapter  
 - **Output**: [`lotr_2004.csv`](lotr_2004.csv)  
-- **Entropy**: ~80 bit
+- **Entropy**: **256 bit** (standard BIP39)
 
 ### 2. Advanced (24 words)
 - **Text**: 3 books × 8 chapters  
 - **Rule**: [`rule_variants.md`](rule_variants.md)  
-- **Entropy**: ~256 bit
+- **Entropy**: **256 bit** (standard BIP39)
 
 ### 3. Whale (48 words)
 - **Text**: LOTR + Hobbit (1–24 each)  
 - **Rule**: 1st common noun per chapter  
-- **Entropy**: ~528 bit
+- **Entropy**: **528 bit**
 
 ### 4. Quantum (72 words)
 - **Text**: LOTR + Hobbit + 1984 (1–24 each)  
@@ -93,7 +93,7 @@
 - **Rule** = private (mental)  
 - **Notary** = legal trigger  
 
-> **24 words = 256 bit**  
+> **24 words = 256 bit** (BIP39 standard)**
 > **48 words = 528 bit**  
 > **72 words = 792 bit**  
 > **MRP = words that live only in your head.**
