@@ -59,6 +59,31 @@
 - Both must **collaborate** to reconstruct the 24-word BIP39 seed
 
 
+## MRP Notary 2-of-2: Zero-Trust Inheritance
+
+> **Book(s) in one safe + Rule(s) in another safe = Post-mortem recovery**  
+> **No single party sees both.**
+
+### How it works
+1. **You** split the seed:
+   - **Document A**: *Public text(s) + edition(s)*  
+     (e.g. "LOTR HarperCollins 2004, Hobbit 2012, 1984 Penguin")
+   - **Document B**: *Mental rule(s)*  
+     (e.g. "1st noun after 'the' in odd chapters")
+2. **Deposit**:
+   - **Document A** → **Notary A / Safe Deposit Box A**
+   - **Document B** → **Notary B / Safe Deposit Box B**
+3. **Heirs**: must retrieve **both documents** to reconstruct
+
+### Benefits
+- **Zero trust**: No one sees the full seed  
+- **No single point of failure**  
+- **Legal & compliant** (Swiss notaries, dual custody)  
+- **Scales**: 24/48/72 words with 1–3 books
+
+**Template**: [`notary_template.txt`](notary_template.txt)  
+> _"To my heirs: retrieve Document A from Notary A and Document B from Notary B. Combine to recover the seed."_
+
 ### Security
 - **Zero hardware**
 - **Zero shared backup**
